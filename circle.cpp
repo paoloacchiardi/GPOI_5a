@@ -28,7 +28,7 @@ Cerchio::Cerchio(int r){
 }
 
 Cerchio::~Cerchio(){
-    printf("\nOggetto eliminato dalla memoria!");
+    cout << "\nOggetto eliminato dalla memoria!";
 }
 
 float Cerchio::Area(){
@@ -40,7 +40,7 @@ float Cerchio::Perimetro(){
 }
 
 void Cerchio::stampaCerchio(){
-    printf("Cerchio:\nRaggio: %.2f", raggio);
+    cout << "Cerchio ->\nRaggio: " << raggio;
 }
 
 int main(){
@@ -49,7 +49,7 @@ int main(){
     area = cerchio.Area();
     perimetro = cerchio.Perimetro();
     cerchio.stampaCerchio();
-    printf("\nArea: %.2f\nPerimetro: %.2f", area, perimetro);
+    cout << "\nArea: " << area << "\nPerimetro: " << perimetro;
     cerchio.~Cerchio();
     return 0;
 }
